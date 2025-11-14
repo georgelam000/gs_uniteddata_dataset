@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 8080
 
 # Specify the command to run the application
-CMD ["functions-framework","--source","main.py", "--target", "copy_bigquery_table", "--port", "8080"]
+CMD ["functions-framework","--source","main.py", "--target", "materialize_view_to_table", "--port", "8080"]
