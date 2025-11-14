@@ -18,3 +18,6 @@ steps:
   - '--allow-unauthenticated'
 images:
 - 'gcr.io/$PROJECT_ID/united-data-transfer'
+options:
+  logging: CLOUD_LOGGING_ONLY
+serviceAccount: 'projects/$PROJECT_ID/serviceAccounts/$PROJECT_ID-compute@developer.gserviceaccount.com'
